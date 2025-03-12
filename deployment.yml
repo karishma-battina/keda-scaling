@@ -23,12 +23,12 @@ spec:
     spec:
       containers:
       - name: ado-agent
-        image: wolfgangofner/adoagent # replace with your value
+        image: sturgacr.azurecr.io/adoagent:v1
         env:
           - name: AZP_URL
-            value: https://dev.azure.com/programmingwithwolfgang # replace with your value
+            value: https://dev.azure.com/mydevopsorg3105
           - name: AZP_POOL
-            value: AgentInContainer # replace with your value
+            value: AgentInContainer
           - name: AZP_TOKEN
             valueFrom:
               secretKeyRef:
